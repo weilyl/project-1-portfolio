@@ -67,7 +67,10 @@ The design of this portfolio will prioritize functionality over aesthetic.
 | Host repository on Github Pages | H | 6hr | -hr |
 | Blurred out overlay on mouseover for each project | L | 5hr | -hr |
 | Additional styling | L | 3hr | -hr |
-| Additional links to LinkedIn, etc. | L | 3hr | -hr
+| Additional links to LinkedIn, etc. | L | 3hr | -hr |
+| Accessibility features | M | 5hr | -hr |
+| Add buttons to carousel for git & codepen | L | 3hr | -hr |
+| 
 | Total | H | 23hrs| -hrs | 
 
 ## Additional Libraries
