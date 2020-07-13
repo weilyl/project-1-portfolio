@@ -40,7 +40,7 @@ The design of this portfolio will prioritize functionality over aesthetic.
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: | :---: | :---: | 
-| Base HTML elements, boiler plate, link docs | H | 2hr | -hr |
+| Base HTML elements, boiler plate, link docs | H | 2hr | 0.75hr |
 | Hamburger click | H | 2hr | -hr |
 | Hamburger show | M | 2hr | -hr |
 | Hamburger initiate nav flexbox | M | 2hr | -hr |

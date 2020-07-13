@@ -6,5 +6,22 @@ https://www.canva.com/colors/color-palettes/here-at-home/
 https://www.canva.com/colors/color-palettes/foil-covered-sneakers/ 
 https://www.canva.com/colors/color-palettes/window-tide/
 https://www.canva.com/colors/color-palettes/mermaid-lagoon/ 
-https://www.canva.com/colors/color-palettes/muted-overview/ */
+https://www.canva.com/colors/color-palettes/muted-overview/ 
 
+dustyrose: (160, 94, 94)
+purple haze: #777180*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    height: 50px;
+    background-color: #777180;
+    margin: 0 auto; 
+}
+
+.navto {
+    padding: 5px;
+    margin: 5px;
+}
