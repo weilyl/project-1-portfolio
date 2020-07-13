@@ -75,7 +75,8 @@ The design of this portfolio will prioritize functionality over aesthetic.
 
 ```
 function carouselNext(){
-    // make right button move to next project in carousel
+    // make right button move to next project in carousel;
+}
 ```
 
 ## Issues and Resolutions
