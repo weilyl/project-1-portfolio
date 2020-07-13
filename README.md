@@ -4,8 +4,8 @@
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
+|Day 1| Project Description | Complete
+|Day 1| Wireframes / Priority Matrix / Timeline | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches | Incomplete
@@ -31,7 +31,7 @@ The design of this portfolio will prioritize functionality over aesthetic.
 
 ## Time/Priority Matrix 
 
-[Matrix](https://res.cloudinary.com/dd3nkph31/image/upload/v1594617227/IMG_2783_kmzaub.jpg)
+- [Matrix](https://res.cloudinary.com/dd3nkph31/image/upload/v1594617227/IMG_2783_kmzaub.jpg)
 
 ## Functional Components
 
@@ -54,7 +54,6 @@ The design of this portfolio will prioritize functionality over aesthetic.
 | Code functions for Google JSON API and carousel interaction | H | 2hr | -hr |
 | Responsive at all screen sizes | L | 2hr | -hr |
 | Project Carousel | M | 2hrs | -hr |
-
 | Total | H | 28hrs| -hrs | 
 
 
@@ -68,8 +67,7 @@ The design of this portfolio will prioritize functionality over aesthetic.
 | Blurred out overlay on mouseover for each project | L | 5hr | -hr |
 | Additional styling | L | 3hr | -hr |
 | Additional links to LinkedIn, etc. | L | 3hr | -hr
-
-| Total | H | 23hrs| -hrs | -hrs 
+| Total | H | 23hrs| -hrs | 
 
 ## Additional Libraries
 
