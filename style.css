@@ -25,3 +25,31 @@ nav {
     padding: 5px;
     margin: 5px;
 }
+
+#greeting > h2, p {
+    text-align: center;
+}
+
+#skills-container {
+    display: inline-block;
+    justify-items: stretch;
+    /* DESKTOP
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 80vw;*/
+}
+
+.skills-div {
+    text-align: center;
+}
+
+.projects-container {
+    text-align: center;
+    justify-content: stretch;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+}
