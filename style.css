@@ -15,19 +15,31 @@ purple haze: #777180*/
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 nav {
+    /* TABLET AND DESKTOP VIEW
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-items: center;
     justify-content: flex-end;
-    height: 50px;
+    height: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     background-color: #777180;
-    margin: 0 auto; 
+    margin: 0; 
+    color: white;
+    height: 50px;
 }
 
 .navto {
+    display: none;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 10px 5px 5px;
+    align-content: center;
 }
 
 #greeting > h2, p {
@@ -57,6 +69,7 @@ nav {
 
 .contact-container {
     display:grid;
+    justify-content: center;
     grid-gap: 10px;
     grid-template-areas:
     'details'
@@ -74,5 +87,13 @@ nav {
 
 .message {
     grid-area: message;
+}
+
+.message > textarea {
     width: 80vw;
+    height: 20vh;
+}
+
+.contact-container > input {
+    width: 5em;
 }
