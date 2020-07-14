@@ -11,6 +11,10 @@ https://www.canva.com/colors/color-palettes/muted-overview/
 dustyrose: (160, 94, 94)
 purple haze: #777180*/
 
+* {
+    box-sizing: border-box;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -31,8 +35,10 @@ nav {
 }
 
 #skills-container {
-    display: inline-block;
-    justify-items: stretch;
+    display: block;
+    align-content: center;
+    text-align: center;
+
     /* DESKTOP
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr;
@@ -50,6 +56,23 @@ nav {
 }
 
 .contact-container {
-    display: flex;
-    flex-wrap: wrap;
+    display:grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    'details'
+    'message';
+}
+
+.contact-details {
+    grid-area: details;
+}
+
+.contact-details > input {
+    display: block;
+    width: 80vw;
+}
+
+.message {
+    grid-area: message;
+    width: 80vw;
 }
