@@ -6,7 +6,7 @@
 |---|---| ---|
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
-|Day 2| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 2| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 3| JSON for Google Sheets & Google Forms | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches & Deployment | Incomplete
@@ -40,14 +40,14 @@ The design of this portfolio will prioritize functionality over aesthetic.
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: | :---: | :---: | 
-| Base HTML elements, boiler plate, link docs | H | 2hr | 0.75hr |
+| Base HTML elements, boiler plate, link docs | H | 2hr | 2.5hr |
 | Hamburger click | H | 2hr | -hr |
 | Hamburger show | M | 2hr | -hr |
 | Hamburger initiate nav flexbox | M | 2hr | -hr |
-| Nav Flexbox | H | 2hr | -hr | 
-| About Me + Skills (Grid inside container) | H | 2hr | -hr |
+| Nav Flexbox | H | 2hr | 1hr | 
+| About Me + Skills (Grid inside container) | H | 2hr | 1hr |
 | Take, crop, upload screenshots of projects | L | 2hr | -hr |
-| Contact form grid | M | 2hr | -hr |
+| Contact form grid | M | 2hr | 1hr |
 | Contact form link Google Forms to documents | H | 1hr | -hr |
 | Contact form code functions for Google Forms | H | 2hr | -hr |
 | Edit Project Google sheet | H | 1hr | -hr |
