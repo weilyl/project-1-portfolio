@@ -9,11 +9,24 @@
     <script type="text/javascript" src="main.js" defer></script>
 </head>
 <body>
+    <header>
     <nav>
-        <div class="navto">About Me</div>
-        <div class="navto">Projects</div>
-        <div class="navto">Contact</div>
+        <div class="hamburger-icon">
+            <div class="hamburger-content"></div>
+            <div class="hamburger-content"></div>
+            <div class="hamburger-content"></div>
+        </div>
+        <div class="navto">
+            <a href="#greeting">About Me</a>
+        </div>
+        <div class="navto">
+            <a href="#projects-container">Projects</a>
+        </div>
+        <div class="navto">
+            <a href="#contact-container">Contact</a>
+        </div>
     </nav>
+    </header>
     <div id="greeting">
         <h2>Hi, I'm Weily.</h2>
         <p>Early-career research scientist, software engineering student, and aspiring computational biologist.</p>
@@ -33,10 +46,10 @@
         
         </div>
     </div>
-    <div class="projects-container">
+    <div id="projects-container">
         
     </div>
-    <div class="contact-container">
+    <div id="contact-container">
         <div class="contact-details">
             <input type="text" id="name" placeholder="Your name">
             <input type="text" id="email" placeholder="Your e-mail">

@@ -19,6 +19,11 @@ body {
     margin: 0;
 }
 
+header {
+    display: static;
+    align-content: stretch;
+}
+
 nav {
     /* TABLET AND DESKTOP VIEW
     display: flex;
@@ -32,14 +37,29 @@ nav {
     background-color: #777180;
     margin: 0; 
     color: white;
-    height: 50px;
+}
+
+.hamburger-icon {
+    padding: 5px 10px 5px 0;
+}
+
+.hamburger-content {
+    background-color: white;
+    border-radius: 5px;
+    height: 5px;
+    width: 30px;
+    margin: 5px 0px 5px 5px;
 }
 
 .navto {
-    display: none;
+    display: block;
     padding: 5px;
     margin: 5px 10px 5px 5px;
     align-content: center;
+}
+
+.navto > a {
+    color: white;
 }
 
 #greeting > h2, p {
@@ -62,12 +82,12 @@ nav {
     text-align: center;
 }
 
-.projects-container {
+#projects-container {
     text-align: center;
     justify-content: stretch;
 }
 
-.contact-container {
+#contact-container {
     display:grid;
     justify-content: center;
     grid-gap: 10px;
