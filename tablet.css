@@ -1,0 +1,130 @@
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+
+}
+
+:root {
+    --dusty-rose-: rgb(160, 94, 94);
+    --purple-haze-: #777180;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    /*changes start here*/
+    flex-direction: row;
+    justify-content: flex-end;
+    /*changes end here*/
+    background-color: var(--purple-haze-);
+    margin: 0;
+    width: 100vw;
+}
+
+
+nav {
+    /*has changes for tablet*/
+    display: flex;
+    /*changes start here*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /*changes end here*/
+    height: 50px;
+    width: 100vw;
+    color: white;
+}
+
+.hamburger-icon {
+    justify-self: center;
+    padding: 10px;
+}
+
+.hamburger-content {
+    background-color: white;
+    border-radius: 5px;
+    height: 5px;
+    width: 30px;
+    margin: 5px 0px 5px 5px;
+}
+
+.navto {
+    display: block;
+    padding: 5px;
+    margin: 5px 10px 5px 5px;
+    align-content: center;
+    font-size: 5vw;
+    font-family: sans-serif;
+}
+
+.navto > a {
+    color: white;
+}
+
+#greeting > h2, p {
+    text-align: center;
+}
+
+p {
+    font-size: 3vh;
+}
+
+h3 {
+    font-size: 5vh;
+}
+
+#skills-container {
+    display: block;
+    align-content: center;
+    text-align: center;
+    margin: 8vw;
+
+    /* DESKTOP changes start here*/
+    /* display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 80vw; */
+    /*DESKTOP changes END here*/
+}
+
+.skills-div {
+    text-align: center;
+    border: 1px blue;
+}
+
+#projects-container {
+    text-align: center;
+    justify-content: stretch;
+}
+
+#contact-container {
+    display:grid;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-areas:
+    'details'
+    'message';
+}
+
+.contact-details {
+    grid-area: details;
+}
+
+.contact-details > input {
+    display: block;
+    width: 80vw;
+}
+
+.message {
+    grid-area: message;
+}
+
+.message > textarea {
+    width: 80vw;
+    height: 20vh;
+}
+
+.contact-container > input {
+    width: 5em;
+}

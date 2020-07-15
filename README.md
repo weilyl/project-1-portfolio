@@ -41,19 +41,19 @@ The design of this portfolio will prioritize functionality over aesthetic.
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: | :---: | :---: | 
 | Base HTML elements, boiler plate, link docs | H | 2hr | 2.5hr |
-| Hamburger click | H | 2hr | -hr |
-| Hamburger show | M | 2hr | -hr |
-| Hamburger initiate nav flexbox | M | 2hr | -hr |
-| Nav Flexbox | H | 2hr | 1hr | 
+| Hamburger click | H | 2hr | 3hr |
+| Hamburger show | M | 2hr | 3hr |
+| Hamburger initiate nav flexbox | M | 2hr | 3hr |
+| Nav Flexbox | H | 2hr | 3hr | 
 | About Me + Skills (Grid inside container) | H | 2hr | 1hr |
 | Take, crop, upload screenshots of projects | L | 2hr | -hr |
-| Contact form grid | M | 2hr | 1hr |
-| Contact form link Google Forms to documents | H | 1hr | -hr |
+| Contact form grid | M | 2hr | 2hr |
+| Contact form link Google Forms to documents | H | 1hr | 3hr |
 | Contact form code functions for Google Forms | H | 2hr | -hr |
 | Edit Project Google sheet | H | 1hr | -hr |
 | Link Google JSON API | H | 2hr | -hr |
 | Code functions for Google JSON API and carousel interaction | H | 2hr | -hr |
-| Responsive at all screen sizes | L | 2hr | -hr |
+| Responsive at all screen sizes | L | 2hr | 3hr |
 | Project Carousel | M | 2hrs | -hr |
 | Total | H | 28hrs| -hrs | 
 
