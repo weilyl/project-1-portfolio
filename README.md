@@ -87,5 +87,12 @@ function carouselNext(){
 
 Documentation of all major issues encountered and their resolution.
 
-**ERROR**:                                
+**ERROR**: 
+main.js:32 POST https://docs.google.com/forms/u/1/d/e/1FAIpQLScUP8hSnb0-SKNnOLZlwhUlhx89k85n_FgXEVBdJdT2N2fNIA/formResponse? net::ERR_ABORTED 400
+getInput	@	main.js:32
+dispatch	@	jquery-3.5.1.js:5429
+elemData.handle	@	jquery-3.5.1.js:5233                                
+**RESOLUTION**: None yet as of 4:40pm EST 7/15/2020
+
+**ERROR**: 
 **RESOLUTION**: 
