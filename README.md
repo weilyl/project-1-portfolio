@@ -92,7 +92,10 @@ main.js:32 POST https://docs.google.com/forms/u/1/d/e/1FAIpQLScUP8hSnb0-SKNnOLZl
 getInput	@	main.js:32
 dispatch	@	jquery-3.5.1.js:5429
 elemData.handle	@	jquery-3.5.1.js:5233                                
-**RESOLUTION**: None yet as of 4:40pm EST 7/15/2020
+**RESOLUTION**: 
+4:50pm EST 7/15/2020 no resolution; new Google Form made (tag "entry.#" for Subject input in contact form obtained, but 400 error persists)
+4:40pm EST 7/15/2020 no resolution; issue logged
+
 
 **ERROR**: 
 **RESOLUTION**: 
