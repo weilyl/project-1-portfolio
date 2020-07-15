@@ -93,6 +93,11 @@ getInput	@	main.js:32
 dispatch	@	jquery-3.5.1.js:5429
 elemData.handle	@	jquery-3.5.1.js:5233                                
 **RESOLUTION**: 
+5:23pm EST 7/15/2020 Using Debugger on Chrome DeveloperTools, Debugger pauses at breakpoint @ jquery-3.5.1.js:5249. T
+The three console.log tests inside getInput() do not log in Developer Tools Console until Debugger is paused. 
+400 error does not log consistently in Developer Tools console. 
+Response does not appear consistently in Google Forms response collection. 
+There is no correlation between 400 error message logging on Developer Tools console and response appearing in Google Forms response collection. 
 4:50pm EST 7/15/2020 no resolution; new Google Form made (tag "entry.#" for Subject input in contact form obtained, but 400 error persists)
 4:40pm EST 7/15/2020 no resolution; issue logged
 
