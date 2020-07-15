@@ -1,0 +1,44 @@
+//////////// CAROUSEL
+
+https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+https://jsfiddle.net/api/mdn/
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+
+CAROUSEL ////////////////// JS
+https://wowslider.com/javascript-slider-ionosphere-stack-demo.html
+
+
+Google for: "carousel that previews previous and next images jquery"
+https://tympanus.net/codrops/2011/09/20/responsive-image-gallery/
+
+CAROUSEL ///////////////// BOOTSTRAP
+https://stackoverflow.com/questions/39296422/showing-previews-previous-and-next-image-with-bootstrap-carousel
+
+https://stackoverflow.com/questions/49912684/carousel-with-preview-of-the-next-and-previous-image 
+https://codepen.io/glebkema/pen/RKavve/
+
+https://stackoverflow.com/questions/18308754/jquery-slider-carousel-with-multiple-images-prev-next-in-slideshow
+
+https://visuallightbox.com/content/30-best-image-sliders-173.html
+https://visuallightbox.com/content/bootstrap-carousel-responsive-648.html
+
+
+
+//////////// Animated/Transform/Transition Navbar
+
+https://www.youtube.com/watch?v=biOMz4puGt8 (Tutorial)
+https://www.w3schools.com/howto/howto_js_check_hidden.asp (Check if element is hidden)
+https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle 
+https://api.jquery.com/toggle/
+
+GOOGLE FORMS
+https://webapps.stackexchange.com/questions/97848/can-google-forms-send-emails-automatically#:~:text=...%20the%20Google%20Form%20will,an%20e%2Dmail%20...
+Google: can i use jquery to fill out google forms
+https://wiki.base22.com/btg/send-data-to-google-docs-using-a-web-form-and-ajax-72942000.html
+https://medium.com/@dmccoy/how-to-submit-an-html-form-to-google-sheets-without-google-forms-b833952cc175
+https://stackoverflow.com/questions/51768959/is-it-possible-to-send-js-variables-to-google-sheets-not-form-data
+https://www.youtube.com/watch?v=GF8ybYKINtA&feature=youtu.be
+https://www.youtube.com/watch?v=KdO9P8FnVN4&t=394s 
+https://drive.google.com/drive/folders/1p_6EOY5gdhYujjgMn0i_3iFvogoZwFSx
+https://www.youtube.com/watch?v=0ZobsvqYA94

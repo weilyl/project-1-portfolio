@@ -17,30 +17,40 @@ purple haze: #777180*/
 
 body {
     margin: 0;
+    scroll-snap-type: x mandatory;
 }
 
 header {
-    display: static;
+    display: flex;
+    flex-direction: row;
     align-content: stretch;
+    background-color: #777180;
+    margin: 0; 
+    justify-content: flex-end;
+    width: 100vw;
 }
 
 nav {
-    /* TABLET AND DESKTOP VIEW
+    /* TABLET AND DESKTOP VIEW */
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
-    height: 50px; */
-    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    width: 100vw;
+    /* MOBILE VIEW */
+    /*display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    background-color: #777180;
-    margin: 0; 
+    align-items: flex-end; */ 
     color: white;
 }
 
 .hamburger-icon {
-    padding: 5px 10px 5px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    justify-self: center;
+    padding: 10px;
 }
 
 .hamburger-content {
@@ -56,6 +66,8 @@ nav {
     padding: 5px;
     margin: 5px 10px 5px 5px;
     align-content: center;
+    font-size: 5vw;
+    font-family: sans-serif;
 }
 
 .navto > a {
@@ -66,10 +78,19 @@ nav {
     text-align: center;
 }
 
+p {
+    font-size: 3vh;
+}
+
+h3 {
+    font-size: 5vh;
+}
+
 #skills-container {
     display: block;
     align-content: center;
     text-align: center;
+    margin: 8vw;
 
     /* DESKTOP
     display: grid;
@@ -80,6 +101,7 @@ nav {
 
 .skills-div {
     text-align: center;
+    border: 1px blue;
 }
 
 #projects-container {
