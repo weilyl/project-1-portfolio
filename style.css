@@ -87,7 +87,7 @@ nav {
 }
 
 p {
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 h3 {
@@ -114,7 +114,18 @@ h3 {
 
 #projects-container {
     text-align: center;
-    justify-content: stretch;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.project-element img {
+    width: 80vw;
+    margin: auto;
+    display: block;
+}
+
+.project-element:first-of-type {
+    display: block;
 }
 
 #contact-container {
@@ -133,6 +144,12 @@ h3 {
 .contact-details > input {
     display: block;
     width: 80vw;
+    height: 4vh;
+}
+
+input, textarea, button {
+    font-size: 3vh;
+    font-family: sans-serif;
 }
 
 .message {
@@ -146,4 +163,8 @@ h3 {
 
 .contact-container > input {
     width: 5em;
+}
+
+button {
+    width: 15vh;
 }

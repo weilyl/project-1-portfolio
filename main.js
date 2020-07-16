@@ -29,19 +29,19 @@ const app = (data) => {
     console.log(data)
 
     const createProjectElement = (project) => {
-        const $div = $('<div>');
+        const $div = $('<div>').attr('class', 'project-element');
         $div.append($('<h2>').text(project.title));
         $div.append($('<p>').text(project.description));
         $div.append($('<img>').attr('src', project.image));
+        $div.append($('<br>'));
         $div.append($('<a>').attr('href', project.url).text('LINK >>>'));
         return $div;
-    
     }
     // $('body').append(createProjectElement(data[0]))
     
     data.forEach( project => {
         const $projectDiv = createProjectElement(project);
-        $('body').append($projectDiv);
+        $('#projects-container').append($projectDiv);
     })
 }
 
