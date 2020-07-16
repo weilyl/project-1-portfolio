@@ -5,8 +5,12 @@ $(document).ready(function() {
     })
 });
 
+// Previous & Next buttons
+$('#previous').on('click', () => {
+    
 
-// Projects JSON
+
+// Projects JSON (Create array of objects for projects)
 const projURL = 'https://spreadsheets.google.com/feeds/list/1S5GibHmW7yaGIyCBTNvm6omER6XzQ-4iiCdtDMrCJtg/od6/public/values?alt=json';
 fetch(projURL)
     .then(response => response.json())
@@ -21,32 +25,30 @@ fetch(projURL)
                 url: entry.gsx$url.$t
             }
         })
-        app(projects)
+        createProjectElements(projects)
     })
- 
-const app = (data) => {
-    console.log('app is running!')
-    console.log(data)
 
-    const createProjectElement = (project) => {
-        const $div = $('<div>').attr('class', 'project-element');
-        $div.append($('<h2>').text(project.title));
-        $div.append($('<p>').text(project.description));
-        $div.append($('<img>').attr('src', project.image));
-        $div.append($('<br>'));
-        $div.append($('<a>').attr('href', project.url).text('LINK >>>'));
-        return $div;
+// Function to look through projects array and add to HTML
+const createProjectElements = (projects) => {    
+    for (i=0; i<projects.length; i++) {
+        // Create one div per project
+        const $projElement = $('<div>').attr('class', 'project-element');
+        const $img = $('<img>').attr('src', projects[i].image);
+        $projElement.append($img);
+        // Create one card per project to place in same div
+        const $projCard = $('<div>').attr('class', 'project-card');
+        $projCard.append($('<h4>').text(projects[i].title));
+        $projCard.append($('<p>').text(projects[i].description));
+        const $projLink = $('<a>').attr('href', projects[i].url);
+        $projLink.text('Source Code');
+        $projCard.append($projLink);
+        $projElement.append($projCard);
+        $('#projects-container').append($projElement);
     }
-    // $('body').append(createProjectElement(data[0]))
-    
-    data.forEach( project => {
-        const $projectDiv = createProjectElement(project);
-        $('#projects-container').append($projectDiv);
-    })
 }
 
 
-// Contact Form
+// Contact Form grab data
 function getInput() {
     // obtain user input from contact form
     const $name = $('#name');
@@ -90,4 +92,6 @@ function getInput() {
     .catch(err => console.log(err));
 };
 
+
+// Contact Form button
 $('.submit').on('click', getInput);

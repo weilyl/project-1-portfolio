@@ -112,6 +112,16 @@ h3 {
     border: 1px blue;
 }
 
+#carousel-container {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+}
+
+.carousel-buttons {
+    text-align: center;
+    align-self: center;
+}
+
 #projects-container {
     text-align: center;
     align-items: center;
@@ -122,6 +132,10 @@ h3 {
     width: 80vw;
     margin: auto;
     display: block;
+}
+
+.project-element {
+    display: none;
 }
 
 .project-element:first-of-type {

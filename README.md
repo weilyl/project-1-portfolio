@@ -93,6 +93,7 @@ getInput	@	main.js:32
 dispatch	@	jquery-3.5.1.js:5429
 elemData.handle	@	jquery-3.5.1.js:5233                                
 **RESOLUTION**: 
+~5:30pm EST 7/15/2020 Issue resolved by turning off email validation.
 5:23pm EST 7/15/2020 Using Debugger on Chrome DeveloperTools, Debugger pauses at breakpoint @ jquery-3.5.1.js:5249. T
 The three console.log tests inside getInput() do not log in Developer Tools Console until Debugger is paused. 
 400 error does not log consistently in Developer Tools console. 
