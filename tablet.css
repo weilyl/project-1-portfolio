@@ -1,7 +1,5 @@
 @media only screen and (min-width: 600px) and (max-width: 900px) {
 
-}
-
 :root {
     --dusty-rose-: rgb(160, 94, 94);
     --purple-haze-: #777180;
@@ -19,18 +17,17 @@ header {
     /*changes end here*/
     background-color: var(--purple-haze-);
     margin: 0;
-    width: 100vw;
 }
 
 
 nav {
     /*has changes for tablet*/
     display: flex;
-    /*changes start here*/
+    /*changes START here*/
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    /*changes end here*/
+    /*changes END here*/
     height: 50px;
     width: 100vw;
     color: white;
@@ -127,4 +124,6 @@ h3 {
 
 .contact-container > input {
     width: 5em;
+}
+
 }

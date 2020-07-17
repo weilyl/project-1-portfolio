@@ -1,7 +1,5 @@
 @media only screen and (min-width: 900px) {
 
-}
-
 :root {
     --dusty-rose-: rgb(160, 94, 94);
     --purple-haze-: #777180;
@@ -19,7 +17,6 @@ header {
     /*changes end here*/
     background-color: var(--purple-haze-);
     margin: 0;
-    width: 100vw;
 }
 
 
@@ -102,7 +99,7 @@ h3 {
 }
 
 #contact-container {
-    display:grid;
+    display: grid;
     justify-content: center;
     grid-gap: 10px;
     grid-template-areas:
@@ -130,4 +127,6 @@ h3 {
 
 .contact-container > input {
     width: 5em;
+}
+
 }

@@ -17,7 +17,8 @@ purple haze: #777180*/
 
 * {
     border: dashed yellowgreen;
-    margin: 0;
+    /* margin: 0; */
+    box-sizing: border-box;
 }
 
 body {
@@ -36,7 +37,6 @@ header {
     justify-content: flex-end;
     background-color: #777180;
     margin: 0; 
-    width: 100vw;
 }
 
 nav {
@@ -118,19 +118,19 @@ h3 {
 
 #carousel-container {
     display: grid;
-    grid-template-columns: 2fr 9fr 2fr;
-    margin: 10px 0 10px 0;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
 .carousel-buttons {
     text-align: center;
     align-self: center;
+    justify-self: center;
     background-color: rgba(160, 94, 94, 0.8);
     color:black;
     border-radius: 50%;
     font-size: 5vw;
-    height: 7vw;
-    width: 7vw;
+    height: 5vw;
+    width: 5vw;
     display: inline-block;
 }
 
@@ -140,7 +140,7 @@ h3 {
 }
 
 .project-element img {
-    width: 80vw;
+    width: 60vw;
     margin: auto;
     display: block;
 }
@@ -168,7 +168,7 @@ h3 {
 
 .contact-details > input {
     display: block;
-    width: 80vw;
+    width: 60vw;
     height: 4vh;
 }
 
