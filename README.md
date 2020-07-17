@@ -109,7 +109,7 @@ There is no correlation between 400 error message logging on Developer Tools con
 
 **ERROR**: 9:16AM EST 7/17/2020 index.html continues to be consistently wider than browser/screen size at all sizes.
 11pm EST 7/16/2020 Mobile View of index.html seems to be consistently wider than browser/screen size.
-**RESOLUTION**: 
+**RESOLUTION**: 9:38AM EST 7/17/2020 removed width: 100vw; from header {} in all CSS files
 
 **ERROR**: 
 **RESOLUTION**: 
