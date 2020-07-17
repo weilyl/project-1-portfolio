@@ -15,9 +15,10 @@ purple haze: #777180*/
     --purple-haze-: #777180;
 }
 
-/* * {
-    box-sizing: border-box;
-} */
+* {
+    border: dashed yellowgreen;
+    margin: 0;
+}
 
 body {
     margin: 0;
@@ -56,7 +57,7 @@ nav {
 .hamburger-icon {
     /* position: fixed; */
     top: 0;
-    right: 0;
+    /* right: 0; */
     justify-self: center;
     padding: 10px;
 }
@@ -70,7 +71,7 @@ nav {
 }
 
 .navto {
-    display: block;
+    /* display: block; */
     padding: 5px;
     margin: 5px 10px 5px 5px;
     align-content: center;
@@ -80,10 +81,13 @@ nav {
 
 .navto > a {
     color: white;
+    display: block;
+    margin: 0 10px 0 0;
 }
 
 #greeting > h2, p {
     text-align: center;
+    margin: 8vw;
 }
 
 p {
@@ -114,18 +118,25 @@ h3 {
 
 #carousel-container {
     display: grid;
-    grid-template-columns: 30px 1fr 30px;
+    grid-template-columns: 2fr 9fr 2fr;
+    margin: 10px 0 10px 0;
 }
 
 .carousel-buttons {
     text-align: center;
     align-self: center;
+    background-color: rgba(160, 94, 94, 0.8);
+    color:black;
+    border-radius: 50%;
+    font-size: 5vw;
+    height: 7vw;
+    width: 7vw;
+    display: inline-block;
 }
 
 #projects-container {
     text-align: center;
     align-items: center;
-    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .project-element img {
