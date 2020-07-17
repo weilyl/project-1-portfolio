@@ -103,5 +103,8 @@ There is no correlation between 400 error message logging on Developer Tools con
 4:40pm EST 7/15/2020 no resolution; issue logged
 
 
-**ERROR**: 
+**ERROR**: 11pm EST 7/16/2020 When carousel buttons are clicked, jQuery error lines 5429 & 5233 appear when using Developer Tools on Google Chrome. Debugger pauses at 5429.  When debugger is paused, carousel resumes intended function.
+**RESOLUTION**: 
+
+**ERROR**: 11pm EST 7/16/2020 Mobile View of index.html seems to be consistently wider than browser/screen size.
 **RESOLUTION**: 
