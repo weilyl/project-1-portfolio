@@ -9,7 +9,14 @@ https://www.canva.com/colors/color-palettes/mermaid-lagoon/
 https://www.canva.com/colors/color-palettes/muted-overview/ 
 
 dustyrose: (160, 94, 94)
-purple haze: #777180*/
+purple haze: #777180
+pewter blue: (136, 160, 168) / 136, 160, 168 88AOA8
+USAFA blue #26547C (38, 84, 124)
+crayola orange yellow (255, 209, 102) / FFD166
+ivory #D4C2B0
+blue #325980
+navy blue #202E50*/
+
 :root {
     --dusty-rose-: rgb(160, 94, 94);
     --purple-haze-: #777180;
@@ -29,12 +36,13 @@ body {
 header {
     display: flex;
     /*DESKTOP & TABLET LANDSCAPE*/
-    /* flex-direction: row;
-    justify-content: flex-end; */
+    /*flex-direction: row;*/
+    /*justify-content: flex-end; */
     /*MOBILE VIEW*/
     flex-direction: column;
     align-content: stretch;
-    justify-content: flex-end;
+    align-items: flex-end;
+    /* justify-items: flex-end; */
     background-color: #777180;
     margin: 0; 
 }
@@ -52,12 +60,10 @@ nav {
     flex-direction: column;
     align-items: flex-end; 
     color: white;
+    background-color: #777180;
 }
 
 .hamburger-icon {
-    /* position: fixed; */
-    top: 0;
-    /* right: 0; */
     justify-self: center;
     padding: 10px;
 }
@@ -71,9 +77,9 @@ nav {
 }
 
 .navto {
-    /* display: block; */
-    padding: 5px;
-    margin: 5px 10px 5px 5px;
+    display: block;
+    /* padding: 5px; */
+    margin: 5px 0px 5px 5px;
     align-content: center;
     font-size: 5vw;
     font-family: sans-serif;

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 650px) and (max-width: 1024px) {
 
 :root {
     --dusty-rose-: rgb(160, 94, 94);
@@ -12,7 +12,7 @@ body {
 header {
     display: flex;
     /*changes start here*/
-    flex-direction: row;
+    /* align-items: center; */
     justify-content: flex-end;
     /*changes end here*/
     background-color: var(--purple-haze-);
@@ -51,7 +51,7 @@ nav {
     padding: 5px;
     margin: 5px 10px 5px 5px;
     align-content: center;
-    font-size: 5vw;
+    font-size: 3vw;
     font-family: sans-serif;
 }
 
