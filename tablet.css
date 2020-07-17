@@ -26,10 +26,10 @@ nav {
     /*changes START here*/
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     /*changes END here*/
-    height: 50px;
-    width: 100vw;
+    /* height: 50px;
+    width: 100vw; */
     color: white;
 }
 
