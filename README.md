@@ -103,8 +103,13 @@ There is no correlation between 400 error message logging on Developer Tools con
 4:40pm EST 7/15/2020 no resolution; issue logged
 
 
-**ERROR**: 11pm EST 7/16/2020 When carousel buttons are clicked, jQuery error lines 5429 & 5233 appear when using Developer Tools on Google Chrome. Debugger pauses at 5429.  When debugger is paused, carousel resumes intended function.
+**ERROR**: 9:16pm 7/17/2020 jQuery errors dispatch jquery-3.5.1.js:5429 & elemData.handle jquery-3.5.1.js:5233 still appearing when carousel buttons clicked. However, carousel buttons are not functioning as intended as originally thought at 11pm EST 7/16/2020. Buttons are only showing first and last images in projects array.
+11pm EST 7/16/2020 When carousel buttons are clicked, jQuery error lines 5429 & 5233 appear when using Developer Tools on Google Chrome. Debugger pauses at 5429.  When debugger is paused, carousel resumes intended function.
 **RESOLUTION**: 
 
-**ERROR**: 11pm EST 7/16/2020 Mobile View of index.html seems to be consistently wider than browser/screen size.
+**ERROR**: 9:16AM EST 7/17/2020 index.html continues to be consistently wider than browser/screen size at all sizes.
+11pm EST 7/16/2020 Mobile View of index.html seems to be consistently wider than browser/screen size.
+**RESOLUTION**: 
+
+**ERROR**: 
 **RESOLUTION**: 
