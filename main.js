@@ -5,38 +5,13 @@ $(document).ready(function() {
     });
 });
 
-// Hide carousel buttons if there are no projects
+// Hide carousel if there are no projects
 $(document).ready(function() {
     if ($('#projects-container').children().length = 0) {
         $('#carousel-container').css('display', 'none');
     }; 
 });
-
-// Previous & Next buttons
-$(() => {
-    let currentImgIndex = 0;
-    let highestImgIndex = $('#projects-container').children().length - 1;
-    $('#next').on('click', () => {
-        $('#projects-container').children().eq(currentImgIndex).css('display','none');
-        if (currentImgIndex < highestImgIndex) {
-            currentImgIndex++;
-        } else { 
-            currentImgIndex = 0;
-        };
-        $('#projects-container').children().eq(currentImgIndex).css('display','block');
-    });
-    $('#previous').on('click', () => {
-        $('#projects-container').children().eq(currentImgIndex).css('display','none');
-        if (currentImgIndex > 0) {
-            currentImgIndex--;
-        } else {
-            currentImgIndex = highestImgIndex;
-        };
-        $('#projects-container').children().eq(currentImgIndex).css('display','block');
-    });
-});
-
-
+ 
 // Projects JSON (Create array of objects for projects)
 const projURL = 'https://spreadsheets.google.com/feeds/list/1S5GibHmW7yaGIyCBTNvm6omER6XzQ-4iiCdtDMrCJtg/od6/public/values?alt=json';
 fetch(projURL)
@@ -72,8 +47,34 @@ const createProjectElements = (projects) => {
         $projElement.append($projCard);
         $('#projects-container').append($projElement);
     }
+    // invoke carousel functionality
+    carouselGo();
 }
 
+// Previous & Next buttons
+function carouselGo() {
+    let currentImgIndex = 0;
+    let highestImgIndex = $('#projects-container').children().length - 1;
+    console.log(highestImgIndex);
+    $('#next').on('click', () => {
+        $('#projects-container').children().eq(currentImgIndex).css('display','none');
+        if (currentImgIndex < highestImgIndex) {
+            currentImgIndex++;
+        } else { 
+            currentImgIndex = 0;
+        }
+        $('#projects-container').children().eq(currentImgIndex).css('display','block');
+    });
+    $('#previous').on('click', () => {
+        $('#projects-container').children().eq(currentImgIndex).css('display','none');
+        if (currentImgIndex > 0) {
+            currentImgIndex--;
+        } else {
+            currentImgIndex = highestImgIndex;
+        }
+        $('#projects-container').children().eq(currentImgIndex).css('display','block');
+    });
+};
 
 // Contact Form grab data
 function getInput() {
