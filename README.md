@@ -112,4 +112,5 @@ There is no correlation between 400 error message logging on Developer Tools con
 **RESOLUTION**: 9:38AM EST 7/17/2020 removed width: 100vw; from header {} in all CSS files
 
 **ERROR**: 
+
 **RESOLUTION**: 

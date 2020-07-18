@@ -8,14 +8,34 @@ https://www.canva.com/colors/color-palettes/window-tide/
 https://www.canva.com/colors/color-palettes/mermaid-lagoon/ 
 https://www.canva.com/colors/color-palettes/muted-overview/ 
 
+Also used: coolours.com, material.io color tool
+
 dustyrose: (160, 94, 94)
 purple haze: #777180
+    ultra light: #F5F5F6
+    light: a69faf
+    dark: 4b4654
 pewter blue: (136, 160, 168) / 136, 160, 168 88AOA8
 USAFA blue #26547C (38, 84, 124)
 crayola orange yellow (255, 209, 102) / FFD166
 ivory #D4C2B0
 blue #325980
-navy blue #202E50*/
+navy blue #202E50
+BLUEGREYS:
+    Dark: #34515e
+    Less dark: 607d8b
+    Light: 8eacbb
+    Lighter: #E1E2E1
+    Ultra light: F5F5F6
+Mildly uplifting blue: 
+    Muted dark: 4d82cb
+    Almost pastel: 82b1ff
+    Light: b6e3ff
+Easter purple: 
+    Dark: 6f79a8
+    Neutral: 9fa8da
+    Light: d1d9ff
+*/
 
 :root {
     --dusty-rose-: rgb(160, 94, 94);
