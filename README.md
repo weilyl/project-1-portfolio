@@ -111,6 +111,6 @@ There is no correlation between 400 error message logging on Developer Tools con
 11pm EST 7/16/2020 Mobile View of index.html seems to be consistently wider than browser/screen size.
 **RESOLUTION**: 9:38AM EST 7/17/2020 removed width: 100vw; from header {} in all CSS files
 
-**ERROR**: 
+**ERROR**: 4:55PM EST 7/18/2020: jQuery functions not working when deployed on Netlify and Github Pages, but working when deployed on Surge.
 
-**RESOLUTION**: 
+**RESOLUTION**: Changed all linked URL's (including jQuery library & Google Sheets & Forms) from HTTP to HTTPS
