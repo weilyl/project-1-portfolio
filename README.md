@@ -7,8 +7,8 @@
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
 |Day 2| Core Application Structure (HTML, CSS, etc.) | Complete
-|Day 3| JSON for Google Sheets & Google Forms | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
+|Day 3| JSON for Google Sheets & Google Forms | Complete
+|Day 4| MVP & Bug Fixes | Complete
 |Day 5| Final Touches & Deployment | Incomplete
 |Day 6| Present | Incomplete
 
@@ -46,16 +46,16 @@ The design of this portfolio will prioritize functionality over aesthetic.
 | Hamburger initiate nav flexbox | M | 2hr | 3hr |
 | Nav Flexbox | H | 2hr | 3hr | 
 | About Me + Skills (Grid inside container) | H | 2hr | 1hr |
-| Take, crop, upload screenshots of projects | L | 2hr | -hr |
+| Take, crop, upload screenshots of projects | L | 2hr | 1hr |
 | Contact form grid | M | 2hr | 2hr |
-| Contact form link Google Forms to documents | H | 1hr | 3hr |
-| Contact form code functions for Google Forms | H | 2hr | -hr |
-| Edit Project Google sheet | H | 1hr | -hr |
-| Link Google JSON API | H | 2hr | -hr |
-| Code functions for Google JSON API and carousel interaction | H | 2hr | -hr |
+| Contact form link Google Forms to documents | H | 1hr | 4hr |
+| Contact form code functions for Google Forms | H | 2hr | 2hr |
+| Edit Project Google sheet | H | 1hr | 1hr |
+| Link Google JSON API | H | 2hr | 3hr |
+| Code functions for Google JSON API and carousel interaction | H | 2hr | 3hr |
 | Responsive at all screen sizes | L | 2hr | 3hr |
-| Project Carousel | M | 2hrs | -hr |
-| Total | H | 28hrs| -hrs | 
+| Project Carousel | M | 2hrs | 5hr |
+| Total | H | 28hrs | 37hrs | 
 
 
 #### PostMVP 

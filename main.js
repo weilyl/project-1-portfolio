@@ -41,7 +41,7 @@ const createProjectElements = (projects) => {
         const $projCard = $('<div>').attr('class', 'project-card');
         $projCard.append($('<h4>').text(projects[i].title));
         $projCard.append($('<p>').text(projects[i].description));
-        const $projLink = $('<a>').attr('href', projects[i].url);
+        const $projLink = $('<a>').attr('href', projects[i].url).attr('target', '_blank');
         $projLink.text('Source Code');
         $projCard.append($projLink);
         $projElement.append($projCard);
