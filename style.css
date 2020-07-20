@@ -1,58 +1,32 @@
-/* COLOR PALETTES
-https://www.canva.com/colors/color-palettes/classic-gentleman/
-https://www.canva.com/colors/color-palettes/rocks-and-barefoot/
-https://www.canva.com/colors/color-palettes/photographer-by-day/
-https://www.canva.com/colors/color-palettes/here-at-home/
-https://www.canva.com/colors/color-palettes/foil-covered-sneakers/ 
-https://www.canva.com/colors/color-palettes/window-tide/
-https://www.canva.com/colors/color-palettes/mermaid-lagoon/ 
-https://www.canva.com/colors/color-palettes/muted-overview/ 
-
-Also used: coolours.com, material.io color tool, colorhunt.co, https://www.w3schools.com/colors/colors_palettes.asp
-
-dustyrose: (160, 94, 94)
-purple haze: #777180
-    ultra light: #F5F5F6
-    light: a69faf
-    dark: 4b4654
-pewter blue: (136, 160, 168) / 136, 160, 168 88A0A8
-USAFA blue #26547C (38, 84, 124)
-crayola orange yellow (255, 209, 102) / FFD166
-ivory #D4C2B0
-almond: f4e1d2
-Linen: F3E9DC
-blue #325980
-navy blue #202E50
-BLUEGREYS:
-    Dark: #34515e
-    Less dark: 607d8b
-    Light: 8eacbb
-    Lighter: #E1E2E1
-    Ultra light: F5F5F6
-Mildly uplifting blue: 
-    Muted dark: 4d82cb
-    Almost pastel: 82b1ff
-    Light: b6e3ff
-Easter purple: 
-    Dark: 6f79a8
-    Neutral: 9fa8da
-    Light: d1d9ff
-*/
+@media only screen and (max-width: 650px){
 
 :root {
-    --dusty-rose-: rgb(160, 94, 94);
-    --purple-haze-: #777180;
+    --ultra-dark-color:#34515E;
+    --neutral-color: #88A0A8;
+    --text-background-color: #F3E9DC;
+    --highlight-color: #b1cbbb; 
 }
 
 * {
-    border: dashed yellowgreen;
-    /* margin: 0; */
+    /* border: dashed var(--highlight-color); */
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    /* scroll-snap-type: x mandatory; */
+    background-color: var(--neutral-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0
 }
 
 header {
@@ -65,7 +39,7 @@ header {
     align-content: stretch;
     align-items: flex-end;
     /* justify-items: flex-end; */
-    background-color: #777180;
+    background-color: var(--ultra-dark-color);
     margin: 0; 
 }
 
@@ -82,7 +56,7 @@ nav {
     flex-direction: column;
     align-items: flex-end; 
     color: white;
-    background-color: #777180;
+    background-color: var(--ultra-dark-color);
 }
 
 .hamburger-icon {
@@ -103,7 +77,7 @@ nav {
     /* padding: 5px; */
     margin: 5px 0px 5px 5px;
     align-content: center;
-    font-size: 5vw;
+    font-size: 10vw; 
     font-family: sans-serif;
 }
 
@@ -111,26 +85,42 @@ nav {
     color: white;
     display: block;
     margin: 0 10px 0 0;
+    text-decoration: none;
 }
 
-#greeting > h2, p {
+#greeting {
+    background-color: var(--text-background-color);
     text-align: center;
-    margin: 8vw;
 }
 
-p {
-    font-size: 4vh;
+#hi {
+    font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+    font-size: 10vw;
 }
 
-h3 {
-    font-size: 5vh;
+#about {
+    font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif;
+    font-size: 7vw;
+    padding: 8vw;
+}
+
+.divider {
+    height: 3vw;
+    width: 100%;
+    background-color: var(--highlight-color);
+    margin: 0;
+}
+
+.title {
+    font-family: "Source Serif Pro", Georgia, serif;
+    font-size: 8vw;
 }
 
 #skills-container {
     display: block;
     align-content: center;
     text-align: center;
-    margin: 8vw;
+    margin: 0 8vw 8vw 8vw;
 
     /* DESKTOP
     display: grid;
@@ -141,7 +131,13 @@ h3 {
 
 .skills-div {
     text-align: center;
-    border: 1px blue;
+    border: 2px var(--neutral-color);
+    background-color: var(--text-background-color);
+    padding: 8vw 0 8vw 0;
+}
+
+.skills-div > p {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 }
 
 #carousel-container {
@@ -153,7 +149,7 @@ h3 {
     text-align: center;
     align-self: center;
     justify-self: center;
-    background-color: rgba(160, 94, 94, 0.8);
+    background-color: var(--highlight-color);
     color:black;
     border-radius: 50%;
     font-size: 5vw;
@@ -167,18 +163,49 @@ h3 {
     align-items: center;
 }
 
-.project-element img {
-    width: 60vw;
-    margin: auto;
-    display: block;
-}
-
 .project-element {
     display: none;
+    background-color: var(--text-background-color);
+    margin: 10px;
+    padding: 10px;
 }
 
 .project-element:first-of-type {
     display: block;
+}
+
+
+.project-element img {
+    width: 60vw;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+
+
+.project-card {
+    margin-bottom: 20px;
+}
+
+.project-card > h4 {
+    font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+    font-size: 10vw;
+}
+
+.project-card > p {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    margin: 10px 0 20px 0;
+}
+
+.project-card > a {
+    background-color: var(--ultra-dark-color);
+    color: white;
+    font-family: "Source Sans Pro",Arial, Helvetica, sans-serif;
+    font-size: 6vw;
+    border-radius: 23px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;    
 }
 
 #contact-container {
@@ -188,6 +215,7 @@ h3 {
     grid-template-areas:
     'details'
     'message';
+    margin: 20px 0px;
 }
 
 .contact-details {
@@ -196,7 +224,7 @@ h3 {
 
 .contact-details > input {
     display: block;
-    width: 60vw;
+    width: 80vw;
     height: 4vh;
 }
 
@@ -218,6 +246,18 @@ input, textarea, button {
     width: 5em;
 }
 
-button {
+.submit {
     width: 15vh;
+    border-radius: 20px;
+    align-self: center;
+    padding: 5px;
+}
+
+footer {
+    background-color: var(--ultra-dark-color);
+    color: white;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+}
 }

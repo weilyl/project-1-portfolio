@@ -1,22 +1,26 @@
-@media only screen and (min-width: 650px) and (max-width: 1024px) {
+@media only screen and (min-width: 650px) {
 
 :root {
-    --dusty-rose-: rgb(160, 94, 94);
-    --purple-haze-: #777180;
+    --ultra-dark-color:#34515E;
+    --neutral-color: #88A0A8;
+    --text-background-color: #F3E9DC;
+    --highlight-color: #b1cbbb; 
 }
 
 body {
     margin: 0;
+    background-color: var(--neutral-color);
 }
 
 header {
     display: flex;
     /*changes start here*/
     /* align-items: center; */
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
     /*changes end here*/
-    background-color: var(--purple-haze-);
     margin: 0;
+    background-color: var(--ultra-dark-color);
 }
 
 
@@ -27,10 +31,8 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    /*changes END here*/
-    /* height: 50px;
-    width: 100vw; */
     color: white;
+    background-color: var(--ultra-dark-color);
 }
 
 .hamburger-icon {
@@ -59,8 +61,20 @@ nav {
     color: white;
 }
 
-#greeting > h2, p {
+#hi {
+    font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+}
+
+#about {
+    font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    padding: 2vw;
+}
+
+#greeting {
     text-align: center;
+    background-color: var(--text-background-color);
 }
 
 p {
@@ -69,6 +83,18 @@ p {
 
 h3 {
     font-size: 5vh;
+}
+
+.divider {
+    height: 2px;
+    width: 100%;
+    background-color: var(--highlight-color);
+    margin: 0;
+}
+
+.title {
+    font-family: "Source Serif Pro", Georgia, serif;
+    font-size: 3vw;
 }
 
 #skills-container {
@@ -86,14 +112,85 @@ h3 {
 }
 
 .skills-div {
-    text-align: center;
-    border: 1px blue;
+    text-align: center; 
+    border: 1px solid var(--neutral-color);
+    background-color: var(--text-background-color);
+    padding: 20px 0 20px 0;
 }
+
+.skills-div p{
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+#carousel-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.carousel-buttons {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    background-color: var(--highlight-color);
+    color:black;
+    border-radius: 50%;
+    font-size: 5vw;
+    height: 5vw;
+    width: 5vw;
+    display: inline-block;
+}
+
 
 #projects-container {
     text-align: center;
-    justify-content: stretch;
+    align-items: center;
 }
+
+.project-element {
+    display: none;
+    background-color: var(--text-background-color);
+    margin: 10px;
+    padding: 10px;
+}
+
+.project-element img {
+    width: 60vw;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+
+.project-card {
+    margin-bottom: 20px;
+}
+
+.project-element:first-of-type {
+    display: block;
+}
+
+.project-card > h4 {
+    font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+}
+
+.project-card > p {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    margin: 0px 0 20px 0;
+    font-size: 3vw;
+}
+
+.project-card > a {
+    background-color: var(--ultra-dark-color);
+    color: white;
+    font-family: "Source Sans Pro",Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    border-radius: 23px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;    
+}
+
+
 
 #contact-container {
     display:grid;
@@ -101,7 +198,8 @@ h3 {
     grid-gap: 10px;
     grid-template-areas:
     'details'
-    'message';
+    'message'
+    'submit';
 }
 
 .contact-details {
@@ -113,6 +211,11 @@ h3 {
     width: 80vw;
 }
 
+input, textarea, button {
+    font-size: 16pt;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
 .message {
     grid-area: message;
 }
@@ -122,8 +225,20 @@ h3 {
     height: 20vh;
 }
 
-.contact-container > input {
-    width: 5em;
+.submit {
+    grid-area: submit;
+    border-radius: 25px;
+    justify-self: center;
+    padding: 10px;
+    margin: 50px 0 20px 0;
+}
+
+footer {
+    background-color: var(--ultra-dark-color);
+    color: white;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
 }
 
 }

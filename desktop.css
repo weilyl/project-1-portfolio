@@ -1,12 +1,22 @@
 @media only screen and (min-width: 1024px) {
 
 :root {
-    --dusty-rose-: rgb(160, 94, 94);
-    --purple-haze-: #777180;
+    --ultra-dark-color:#34515E;
+    --neutral-color: #88A0A8;
+    --text-background-color: #F3E9DC;
+    --highlight-color: #b1cbbb; 
 }
 
 body {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 header {
@@ -15,7 +25,7 @@ header {
     flex-direction: row-reverse;
     justify-content: flex-start;
     /*changes end here*/
-    background-color: var(--purple-haze-);
+    background-color: var(--ultra-dark-color);
     margin: 0;
 }
 
@@ -28,10 +38,8 @@ nav {
     align-items: center;
     justify-content: flex-end;
     /*changes end here*/
-    /* height: 50px;
-    width: 100vw; */
     color: white;
-    background-color: #777180;
+    background-color: var(--ultra-dark-color);
 }
 
 .hamburger-icon {
@@ -60,6 +68,21 @@ nav {
     color: white;
 }
 
+#hi {
+    font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+}
+
+#about {
+    font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    padding: 2vw;
+}
+
+#greeting {
+    background-color: var(--text-background-color);
+}
+
 #greeting > h2, p {
     text-align: center;
 }
@@ -70,6 +93,18 @@ p {
 
 h3 {
     font-size: 3vh;
+}
+
+.divider {
+    height: 2px;
+    width: 100%;
+    background-color: var(--highlight-color);
+    margin: 0;
+}
+
+.title {
+    font-family: "Source Serif Pro", Georgia, serif;
+    font-size: 3vw;
 }
 
 #skills-container {
@@ -86,35 +121,121 @@ h3 {
     grid-template: 1fr / 1fr 1fr 1fr;
     margin: 0 auto;
     width: 80vw;
+    border-radius: 20px;
+    border: 1px solid var(--hightlight-color);
+    box-shadow: 5px gray;
+    overflow: hidden;
     /*DESKTOP changes END here*/
 }
 
 .skills-div {
-    text-align: center;
-    border: 1px blue;
+    text-align: center; 
+    border: 1px solid var(--neutral-color);
+    background-color: var(--text-background-color);
+    padding: 20px 0 20px 0;
 }
+
+.skills-div p{
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+#carousel-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.carousel-buttons {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    background-color: var(--highlight-color);
+    color:black;
+    border-radius: 50%;
+    font-size: 5vw;
+    height: 5vw;
+    width: 5vw;
+    display: inline-block;
+}
+
 
 #projects-container {
     text-align: center;
-    justify-content: stretch;
+    align-items: center;
 }
+
+.project-element {
+    display: none;
+    background-color: var(--text-background-color);
+    margin: 10px;
+    padding: 10px;
+}
+
+.project-element:first-of-type {
+    display: block;
+}
+
+
+.project-element img {
+    width: 60vw;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+
+.project-card {
+    margin-bottom: 20px;
+}
+
+.project-card > h4 {
+    font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+}
+
+.project-card > p {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    margin: 0px 0 20px 0;
+    font-size: 3vw;
+}
+
+.project-card > a {
+    background-color: var(--ultra-dark-color);
+    color: white;
+    font-family: "Source Sans Pro",Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    border-radius: 23px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;    
+}
+
 
 #contact-container {
     display: grid;
     justify-content: center;
-    grid-gap: 10px;
     grid-template-areas:
-    'details'
-    'message';
+    'details message'
+    'submit submit';
+    margin: 0 0 30px 0;
 }
 
 .contact-details {
+    display: flex;
+    flex-direction: column;
     grid-area: details;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    height: 35vh;
+    justify-content: space-between;
 }
 
 .contact-details > input {
     display: block;
-    width: 80vw;
+    width: 45vw;
+}
+
+input, textarea, button {
+    font-size: 16pt;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 }
 
 .message {
@@ -122,12 +243,25 @@ h3 {
 }
 
 .message > textarea {
-    width: 80vw;
-    height: 20vh;
+    width: 45vw;
+    height: 35vh;
 }
 
-.contact-container > input {
-    width: 5em;
+.submit {
+    grid-area: submit;
+    /* width: 20vh; */
+    border-radius: 25px;
+    justify-self: center;
+    padding: 10px;
+    margin: 50px 0 20px 0;
+}
+
+footer {
+    background-color: var(--ultra-dark-color);
+    color: white;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
 }
 
 }

@@ -1,78 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weily Lang</title>
+
+    <!-- Media Query Stylesheets -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="tablet.css">
     <link rel="stylesheet" type="text/css" href="desktop.css">
+
+    <!-- JavaScript and jQuery-->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous" defer></script>
     <script type="text/javascript" src="main.js" defer></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Source+Serif+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+
+
 </head>
+
 <body>
-    <header>
+    <header><!-- Contains hamburger icon and navigation buttons -->
         <div class="hamburger-icon">
+            <!-- Hamburger "buns" below: -->
             <div class="hamburger-content"></div>
             <div class="hamburger-content"></div>
             <div class="hamburger-content"></div>
         </div>
+
         <nav style="display:none;">
+
             <div class="navto">
                 <a href="#greeting">About Me</a>
             </div>
+
             <div class="navto">
                 <a href="#carousel-container">Projects</a>
             </div>
+
             <div class="navto">
                 <a href="#contact-container">Contact</a>
             </div>
         </nav>
+
     </header>
+
     <div id="greeting">
-        <h2>Hi, I'm Weily.</h2>
-        <p>Early-career research scientist, software engineering student, and aspiring computational biologist.</p>
+
+        <h2 id="hi">Hi, I'm Weily.</h2>
+
+        <p class="content" id="about">Early-career research scientist turned software engineering student. <br/><br/> Aspiring computational biologist.</p>
+
     </div>
+
+    <div class="divider" id="greeting-to-skills"></div>
+
     <div id="skills-container">
+
         <div class="skills-div">
-            <h3>Software Engineering</h3>
-            <p>HTML, CSS, Javascript</p>
+            <h3 class="title">Software Engineering</h3>
+            <p class="content skills">HTML, CSS, Javascript</p>
         </div>
+
         <div class="skills-div">
-            <h3>Multi-disciplinary Biology Research</h3>
-            <p>Behavioral Ecology, Cell Biology/Genetics, Computational Biology (Molecular Dynamics)</p>
+            <h3 class="title">Multi-disciplinary Biology Research</h3>
+            <p class="content skills">Behavioral Ecology, Cell Biology/Genetics, Computational Biology (Molecular Dynamics)</p>
         </div>
+
         <div class="skills-div">
-            <h3>Communication & Logistics</h3>
-            <p>7 years of public speaking experience</p>
-        
+            <h3 class="title">Communication & Logistics</h3>
+            <p class="content skills">7 years of public speaking experience</p>
         </div>
+
     </div>
+
+    <div class="divider" id="greeting-to-skills"></div>
+    
     <div id="carousel-container">
+
         <a id="previous" class="carousel-buttons">&#8249;</a>
+
         <div id="projects-container">
-            <!--- To be appended using jQuery & Google Sheets API
+            <!--- Individual projects to be appended using jQuery & Google Sheets API as new elements consisting of an image and a text card so the text card can be styled to animate, hide, etc. in post-MVP 
+
             <div class="project-element">
+
                 <img src="${projects[i].image}">
+
                 <div class="project-card">
+
                     <h4>${projects[i].title}</h4>
                     <p>${projects[i].description}</p>
                     <a href="${projects[i].url}">Source Code</a>
+
                 </div>
             </div> --->
+
         </div>
+
         <a id="next" class="carousel-buttons">&#8250;</a>
     </div>
+
     <div id="contact-container">
+
         <div class="contact-details">
+
             <input type="text" id="name" placeholder="Your name">
             <input type="text" id="email" placeholder="Your e-mail">
             <input type="text" id="subject" placeholder="Subject">
+
         </div>
+
         <div class="message">
+
             <textarea id="msg" placeholder="Message"></textarea>
+
         </div>
+
         <button type="button" class="submit">Submit</button>
     </div>
+
+    <footer>
+        <span>Weily Lang 2020</span>
+        <div id="icons-container"></div>
+    </footer>
 </body>
 </html>
