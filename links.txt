@@ -1,9 +1,17 @@
+https://www.w3schools.com/css/css_link.asp
+
 https://material.io/design/typography/understanding-typography.html#type-classification
 https://material.io/design/color/applying-color-to-ui.html#sheets-and-surfaces
 https://www.youtube.com/watch?v=hbJmm-d94FA&feature=youtu.be
+https://htmlcolorcodes.com/
+https://colorhunt.co/likes
+https://coolors.co/4b4654-a05e5e-6f79a8-f4e1d2-d2da2c-82b1ff-34515e-4d82cb-f5f5f6-88a0a8
+https://www.w3schools.com/colors/colors_palettes.asp
+https://codepen.io/EvyatarDa/pen/waKXMd?editors=0110
 
 ///// FONTS
 https://fonts.googleapis.com/css?family=Raleway
+https://www.canva.com/learn/the-ultimate-guide-to-font-pairing/
 
 
 //////////// CAROUSEL
@@ -64,3 +72,7 @@ https://drive.google.com/drive/folders/1p_6EOY5gdhYujjgMn0i_3iFvogoZwFSx
 https://www.youtube.com/watch?v=0ZobsvqYA94
 https://www.youtube.com/watch?v=WY4rvU4ImgE
 https://blog.h-educate.com/how-to-send-an-email-in-a-static-html-page-using-google-sheets-scripts/
+
+MEDIA QUERY
+https://www.smashingmagazine.com/2018/02/media-queries-responsive-design-2018/
+https://www.smashingmagazine.com/2019/06/optimizing-google-fonts-performance/#:~:text=Like%20all%20good%20things%2C%20Google,before%20they%20can%20be%20displayed.
