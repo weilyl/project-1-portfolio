@@ -1,5 +1,9 @@
 # Project Overview
 
+[Final Project - Github Pages](https://weilyl.github.io/project-1-portfolio/)
+[Final Project - Netlify](https://wlang.netlify.app/)
+[Final Project - Surge (used for local changes)](http://weily-lang-ga-sei-project01.surge.sh/)
+
 ## Project Schedule
 
 |  Day | Deliverable | Status
@@ -9,8 +13,8 @@
 |Day 2| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 3| JSON for Google Sheets & Google Forms | Complete
 |Day 4| MVP & Bug Fixes | Complete
-|Day 5| Final Touches & Deployment | Incomplete
-|Day 6| Present | Incomplete
+|Day 5| Final Touches & Deployment | Complete
+|Day 6| Present | Complete
 
 ## Project Description
 
@@ -62,18 +66,22 @@ The design of this portfolio will prioritize functionality over aesthetic.
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Document Issues | M | 5hr | -hr |
-| Include link to Project Github Pages | M | 1hr | -hr |
+| Document Issues | M | 5hr | 2hr |
+| Include link to Project Github Pages | M | 1hr | 0.5hr |
 | Host repository on Github Pages | H | 6hr | -hr |
 | Blurred out overlay on mouseover for each project | L | 5hr | -hr |
-| Additional styling | L | 3hr | -hr |
+| Additional styling | L | 3hr | 8hr |
 | Additional links to LinkedIn, etc. | L | 3hr | -hr |
 | Accessibility features | M | 5hr | -hr |
-| Add buttons to carousel for git & codepen | L | 3hr | -hr |
+| Add buttons to carousel for git & codepen | L | 3hr | 3hr |
 | 
-| Total | H | 23hrs| -hrs | 
+| Total | H | 23hrs| 13hrs | 
 
 ## Additional Libraries
+
+https://code.jquery.com/
+https://fonts.google.com/ 
+
 
 ## Code Snippet
 
