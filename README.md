@@ -68,13 +68,24 @@ The design of this portfolio will prioritize functionality over aesthetic.
 | --- | :---: |  :---: | :---: | 
 | Document Issues | M | 5hr | 2hr |
 | Include link to Project Github Pages | M | 1hr | 0.5hr |
-| Host repository on Github Pages | H | 6hr | -hr |
+| Host repository on Github Pages | H | 6hr | 0.5hr |
 | Blurred out overlay on mouseover for each project | L | 5hr | -hr |
 | Additional styling | L | 3hr | 8hr |
 | Additional links to LinkedIn, etc. | L | 3hr | -hr |
 | Accessibility features | M | 5hr | -hr |
-| Add buttons to carousel for git & codepen | L | 3hr | 3hr |
-| 
+| Add buttons to carousel for git & codepen | L | 3hr | 3hr | Add icons to footer | L | 2hr | -hr |
+| Change carousel buttons to be bigger | H | 2hr | -hr |
+| Change mobile view carousel to slider | L | 2hr | -hr |
+| Experiment with CSS-only slider/carousel or Bootstrap/plugin | L | 2hr | -hr |
+| Adjust font sizes for legibility and responsiveness | M | 3hr | -hr |
+| Add headings to project carousel & contact form | M | 1hr | -hr|
+| Add alert or change text after submitting contact form | L | 1hr | -hr |
+| Add animations on Navigation Bar on mouseover | L | 2hr | -hr| 
+| Edit hamburger menu/header so that About Me doesn't load as 2 lines | M | 3hr | -hr |
+| Change mobile view carousel images to be bigger | H | 2hr | -hr |
+| Make hamburger menu/header sticky or fixed position | L | 2hr | -hr |
+| Edit styling between and around sections to be more modern | 1hr | -hr |
+|
 | Total | H | 23hrs| 13hrs | 
 
 ## Additional Libraries
@@ -96,10 +107,13 @@ function carouselNext(){
 Documentation of all major issues encountered and their resolution.
 
 **ERROR**: 
+```
 main.js:32 POST https://docs.google.com/forms/u/1/d/e/1FAIpQLScUP8hSnb0-SKNnOLZlwhUlhx89k85n_FgXEVBdJdT2N2fNIA/formResponse? net::ERR_ABORTED 400
 getInput	@	main.js:32
 dispatch	@	jquery-3.5.1.js:5429
-elemData.handle	@	jquery-3.5.1.js:5233                                
+elemData.handle	@	jquery-3.5.1.js:5233
+```
+
 **RESOLUTION**: 
 ~5:30pm EST 7/15/2020 Issue resolved by turning off email validation.
 5:23pm EST 7/15/2020 Using Debugger on Chrome DeveloperTools, Debugger pauses at breakpoint @ jquery-3.5.1.js:5249. T
@@ -112,11 +126,15 @@ There is no correlation between 400 error message logging on Developer Tools con
 
 
 **ERROR**: 9:16AM EST 7/17/2020 jQuery errors dispatch jquery-3.5.1.js:5429 & elemData.handle jquery-3.5.1.js:5233 still appearing when carousel buttons clicked. However, carousel buttons are not functioning as intended as originally thought at 11pm EST 7/16/2020. Buttons are only showing first and last images in projects array.
+
 11pm EST 7/16/2020 When carousel buttons are clicked, jQuery error lines 5429 & 5233 appear when using Developer Tools on Google Chrome. Debugger pauses at 5429.  When debugger is paused, carousel resumes intended function.
+
 **RESOLUTION**: 12:18PM EST 7/17/2020 Named carousel button function & invoked function after all carousel elements were obtained & loaded from Google Sheets. 
 
 **ERROR**: 9:16AM EST 7/17/2020 index.html continues to be consistently wider than browser/screen size at all sizes.
+
 11pm EST 7/16/2020 Mobile View of index.html seems to be consistently wider than browser/screen size.
+
 **RESOLUTION**: 9:38AM EST 7/17/2020 removed width: 100vw; from header {} in all CSS files
 
 **ERROR**: 4:55PM EST 7/18/2020: jQuery functions not working when deployed on Netlify and Github Pages, but working when deployed on Surge.
