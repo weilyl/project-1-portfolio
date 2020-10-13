@@ -158,6 +158,20 @@ nav {
     display: inline-block;
 }
 
+.fa-chevron-left, .fa-chevron-right {
+    color: var(--ultra-dark-color);
+    vertical-align: top;
+}
+
+.fa-chevron-left {
+    margin-left: -0.75vw;
+}
+
+.fa-chevron-right {
+    margin-right: -0.75vw;
+}
+
+
 #projects-container {
     text-align: center;
     align-items: center;

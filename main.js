@@ -12,7 +12,7 @@ $(document).ready(function() {
     }; 
 });
  
-// Projects JSON (Create array of objects for projects)
+// Projects JSON (Create array of objects for projects using Google Sheets API)
 const projURL = 'https://spreadsheets.google.com/feeds/list/1S5GibHmW7yaGIyCBTNvm6omER6XzQ-4iiCdtDMrCJtg/od6/public/values?alt=json';
 fetch(projURL)
     .then(response => response.json())
@@ -30,7 +30,7 @@ fetch(projURL)
         createProjectElements(projects)
     })
 
-// Function to look through projects array and add to HTML
+// Function to look through projects array of objects and add projects to HTML
 const createProjectElements = (projects) => {    
     for (i = 0; i < projects.length; i++) {
         // Create one div per project
@@ -47,38 +47,39 @@ const createProjectElements = (projects) => {
         $projElement.append($projCard);
         $('#projects-container').append($projElement);
     }
-    // invoke carousel functionality
+    // Invoke carousel functionality
     carouselGo();
 }
 
-// Previous & Next buttons
+// Previous & Next buttons for Carousel
+// Based on Corgi Carousel Tutorial for GA SEIR Avocado Toast
 function carouselGo() {
-    let currentImgIndex = 0;
-    let highestImgIndex = $('#projects-container').children().length - 1;
-    console.log(highestImgIndex);
+    let indexCounter = 0;
+    let maxIndex = $('#projects-container').children().length - 1;
     $('#next').on('click', () => {
-        $('#projects-container').children().eq(currentImgIndex).css('display','none');
-        if (currentImgIndex < highestImgIndex) {
-            currentImgIndex++;
+        $('#projects-container').children().eq(indexCounter).css('display','none');
+        if (indexCounter < maxIndex) {
+            indexCounter++;
         } else { 
-            currentImgIndex = 0;
+            indexCounter = 0;
         }
-        $('#projects-container').children().eq(currentImgIndex).css('display','block');
+        $('#projects-container').children().eq(indexCounter).css('display','block');
     });
     $('#previous').on('click', () => {
-        $('#projects-container').children().eq(currentImgIndex).css('display','none');
-        if (currentImgIndex > 0) {
-            currentImgIndex--;
+        $('#projects-container').children().eq(indexCounter).css('display','none');
+        if (indexCounter > 0) {
+            indexCounter--;
         } else {
-            currentImgIndex = highestImgIndex;
+            indexCounter = maxIndex;
         }
-        $('#projects-container').children().eq(currentImgIndex).css('display','block');
+        $('#projects-container').children().eq(indexCounter).css('display','block');
     });
 };
 
-// Contact Form grab data
+// Contact Form
 function getInput() {
-    // obtain user input from contact form
+
+    // Obtain user input from HTML contact form
     const $name = $('#name');
     const $email = $('#email');
     const $subject = $('#subject');
@@ -86,25 +87,14 @@ function getInput() {
 
     // Google Form URL
     const $formURL = 'https://docs.google.com/forms/u/1/d/e/1FAIpQLScUP8hSnb0-SKNnOLZlwhUlhx89k85n_FgXEVBdJdT2N2fNIA/formResponse';
-    
-    // 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeZSjsZbKua9ukZPDot0VyTd43JFPoyFLdqBbngJPx1Id5LAA/formResponse'; 
-    
-    // may or may not need ?
 
-    // tags for input from Google Form URL
-    const $googleName ='entry.2005620554'; //"entry.1389903601";
-    const $googleEmail = 'entry.1160907507'; //"entry.1487871588";
-    const $googleSubject = 'entry.1045781291'; //"entry.1386304243";
-    const $googleMessage = 'entry.839337160'; //"entry.39027611";
+    // Tags for input from Google Form URL
+    const $googleName ='entry.2005620554'; 
+    const $googleEmail = 'entry.1160907507'; 
+    const $googleSubject = 'entry.1045781291'; 
+    const $googleMessage = 'entry.839337160'; 
 
-    // TEST
-    console.log($message.val());
-    console.log($googleMessage);
-
-    // sent content via POST
-    // Kenya's way: <form action="https://docs.google.com/forms/.../formResponse" method="POST" id=""> <input name="entry....">
-    console.log(`${$googleName}=${$name.val()}&${$googleEmail}=${$email.val()}&${$googleSubject}=${$subject.val()}&${$googleMessage}=${$message.val()}`);
-
+    // fill out Google Form and send 
     fetch($formURL, {
         method: 'POST',
         mode: 'no-cors',

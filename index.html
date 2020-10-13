@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weily Lang</title>
 
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/ef00335047.js" crossorigin="anonymous"></script>
+
     <!-- Media Query Stylesheets -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="tablet.css">
@@ -62,30 +65,36 @@
 
     <div class="divider" id="greeting-to-skills"></div>
 
-    <div id="skills-container">
+    <!-- <div id="skills-block"> Left in in case future needs require 100vh for this section-->
 
-        <div class="skills-div">
-            <h3 class="title">Software Engineering</h3>
-            <p class="content skills">HTML, CSS, Javascript</p>
+        <div id="skills-container">
+
+            <div class="skills-div" id="skills-div-1">
+                <h3 class="skillset-title">Software Engineering</h3>
+                <p class="content skills">HTML, CSS, Javascript, jQuery, Node.js, Express, MongoDB, Mongoose, PostgreSQL, Ruby, Rails, Python, Django, Vue.js</p>
+            </div>
+
+            <div class="skills-div" id="skills-div-2">
+                <h3 class="skillset-title">Multi-disciplinary Biology Research</h3>
+                <p class="content skills">Behavioral Ecology, Cell Biology/Genetics, Computational Biology (Molecular Dynamics)</p>
+            </div>
+
+            <div class="skills-div" id="skills-div-3">
+                <h3 class="skillset-title">Communication & Logistics</h3>
+                <p class="content skills">7 years of public speaking experience</p>
+            </div>
+
         </div>
 
-        <div class="skills-div">
-            <h3 class="title">Multi-disciplinary Biology Research</h3>
-            <p class="content skills">Behavioral Ecology, Cell Biology/Genetics, Computational Biology (Molecular Dynamics)</p>
-        </div>
+    <!-- </div> -->
 
-        <div class="skills-div">
-            <h3 class="title">Communication & Logistics</h3>
-            <p class="content skills">7 years of public speaking experience</p>
-        </div>
-
-    </div>
-
-    <div class="divider" id="greeting-to-skills"></div>
+    <div class="divider" id="skills-to-carousel"></div>
     
     <div id="carousel-container">
 
-        <a id="previous" class="carousel-buttons">&#8249;</a>
+        <!-- <a id="previous" class="carousel-buttons">&#8249;</a> -->
+
+        <a id="previous" class="carousel-buttons"><i class="fas fa-chevron-left fa-0.3x"></i></a>
 
         <div id="projects-container">
             <!--- Individual projects to be appended using jQuery & Google Sheets API as new elements consisting of an image and a text card so the text card can be styled to animate, hide, etc. in post-MVP 
@@ -105,7 +114,7 @@
 
         </div>
 
-        <a id="next" class="carousel-buttons">&#8250;</a>
+        <a id="next" class="carousel-buttons"><i class="fas fa-chevron-right fa-0.3x"></i></a>
     </div>
 
     <div id="contact-container">
