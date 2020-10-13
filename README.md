@@ -84,11 +84,7 @@ The design of this portfolio will prioritize functionality over aesthetic.
 | Edit hamburger menu/header so that About Me doesn't load as 2 lines | M | 3hr | -hr |
 | Change mobile view carousel images to be bigger | H | 2hr | -hr |
 | Make hamburger menu/header sticky or fixed position | L | 2hr | -hr |
-| Edit styling between and around sections to be more modern | 1hr | -hr |
-| Add Home link to header/hamburger menu | L | 1hr | -hr |
-| Add sections to Google Sheet (Challenge, Highlights, Skills Used) & edit jQuery accordingly | M | 1hr | -hr |
-| 
-|
+| Edit styling between and around sections to be more modern | 50hr | 9hr |
 | Total | H | 23hrs| 13hrs | 
 
 ## Additional Libraries
